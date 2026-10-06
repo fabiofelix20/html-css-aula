@@ -1,0 +1,180 @@
+/* ==========================================================================
+   1. CONFIGURAÇÕES GERAIS E RESETS
+   ========================================================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333333;
+  background-color: #f7f9fa;
+}
+
+/* ==========================================================================
+   2. TOPO (HEADER) E NAVEGAÇÃO
+   ========================================================================== */
+header {
+  background-color: #1a5c40; /* Verde escuro institucional */
+  color: #ffffff;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+header h1 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover, nav a:focus {
+  background-color: #27855b; /* Efeito de destaque ao passar o mouse */
+}
+
+/* ==========================================================================
+   3. CONTEÚDO PRINCIPAL (MAIN) E SEÇÕES
+   ========================================================================== */
+main {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1.5rem;
+}
+
+section {
+  background: #ffffff;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+h2 {
+  color: #1a5c40;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid #e1e7e5;
+  padding-bottom: 0.5rem;
+}
+
+h3 {
+  color: #27855b;
+  margin: 1.5rem 0 0.5rem 0;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+ul {
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+/* Ajuste da Imagem Institucional */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin-top: 1rem;
+}
+
+/* Links e Botões de Ação */
+a.btn, button, section a[href="cadastro.html"] {
+  display: inline-block;
+  background-color: #27855b;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+a.btn:hover, button:hover, section a[href="cadastro.html"]:hover {
+  background-color: #1a5c40;
+}
+
+/* ==========================================================================
+   4. FORMULÁRIOS (PÁGINA DE CADASTRO)
+   ========================================================================== */
+fieldset {
+  border: 1px solid #c8d6d1;
+  border-radius: 6px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  background-color: #fbfcfc;
+}
+
+legend {
+  font-weight: bold;
+  color: #1a5c40;
+  padding: 0 0.5rem;
+}
+
+label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select {
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 0.25rem;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+input:focus, select:focus {
+  outline: none;
+  border-color: #27855b;
+  box-shadow: 0 0 0 3px rgba(39, 133, 91, 0.2);
+}
+
+.acoes-formulario {
+  text-align: right;
+  margin-top: 1.5rem;
+}
+
+/* ==========================================================================
+   5. RODAPÉ (FOOTER)
+   ========================================================================== */
+footer {
+  background-color: #333333;
+  color: #ffffff;
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 4rem;
+  font-size: 0.9rem;
+}
